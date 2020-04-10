@@ -1,0 +1,12 @@
+div#starting-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+h1.title {
+  font-size: 3em;
+  font-weight: 100;
+}
