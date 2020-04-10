@@ -15,9 +15,7 @@ const App = () => {
   return (
     <Router>
       <Switch>
-          <Route path="/result">
-            <GameOver />
-          </Route>
+          <Route path="/result" component={GameOver} />
           <Route path="/game">
             <Game 
               questions={questions}
