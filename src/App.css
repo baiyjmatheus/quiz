@@ -8,14 +8,14 @@ span.highlighted {
 
 div#app-wrapper {
   display: flex;
-  height: 100vh;
+  height: 100%;
 }
 
 div#main-content {
   display: flex;
   flex-direction: column;
   width: 70%;
-  height: 100vh;
+  height: 100%;
   padding: 16px;
 }
 

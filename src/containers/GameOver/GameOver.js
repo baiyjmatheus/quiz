@@ -30,7 +30,7 @@ const GameOver = (props) => {
       <div id="main-content">
         <Title />
         <ContentBox
-          subtitle="Choose your level"
+          subtitle="Your results"
           content={content}
         />
       </div>
