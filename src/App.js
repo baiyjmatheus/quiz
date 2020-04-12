@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/level-selection" component={LevelSelection} />
           <Route path="/fun-fact" component={FunFact} />
           <Route path="/welcome" component={Welcome}/>
-          <Route path="/">
+          <Route path="/quiz">
             <StartingPage />
           </Route>
         </Switch>
