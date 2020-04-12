@@ -11,7 +11,6 @@ class QuestionContainer extends React.Component {
     super(props);
     this.state = {
       selectedAnswer: null,
-      isAnswerCorrect: null,
       isAnswered: false,
     }
   }
@@ -24,9 +23,11 @@ class QuestionContainer extends React.Component {
 
   handleAnswerSubmission = (e) => {
     e.preventDefault();
-    const { question, increasePoint } = this.props;
+    const { question, increasePoint, setIsAnswerCorrect } = this.props;
+    const isAnswerCorrect = this.state.selectedAnswer === question.correctAnswer;
+    setIsAnswerCorrect(isAnswerCorrect)
     this.setState({
-      isAnswerCorrect: this.state.selectedAnswer === question.correctAnswer,
+      isAnswerCorrect,
       isAnswered: true,
     });
     if (this.state.selectedAnswer === question.correctAnswer) {
@@ -49,7 +50,7 @@ class QuestionContainer extends React.Component {
       choices,
     } = this.props.question;
     const { isLastQuestion, points, totalQuestions } = this.props;
-    const { isAnswerCorrect, selectedAnswer, isAnswered } = this.state;
+    const { selectedAnswer, isAnswered } = this.state;
     const proceedBtn = isLastQuestion
       ? <Link to={{
         pathname: "/result",
@@ -72,7 +73,7 @@ class QuestionContainer extends React.Component {
           isAnswered={isAnswered}
         />
         {
-          isAnswerCorrect !== null && 
+          isAnswered && 
           <div>
             { proceedBtn }
           </div>

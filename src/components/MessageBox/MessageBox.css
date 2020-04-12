@@ -1,5 +1,9 @@
 div.message-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   height: 20vh;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 16px;
 }

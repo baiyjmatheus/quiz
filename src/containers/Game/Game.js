@@ -18,7 +18,14 @@ class Game extends React.Component {
       points: 0,
       currentQuestion: 0,
       questions: questions[level],
+      isAnswerCorrect: null,
     };
+  }
+
+  setIsAnswerCorrect = (isAnswerCorrect) => {
+    this.setState({
+      isAnswerCorrect,
+    });
   }
 
   toggleIsLastQuestion = () => {
@@ -39,12 +46,13 @@ class Game extends React.Component {
     }), () => {
       if (this.state.currentQuestion === this.state.questions.length - 1) {
         this.toggleIsLastQuestion();
+        this.setIsAnswerCorrect(null);
       }
     });
   }
 
   render() {
-    const { questions, currentQuestion, points, isLastQuestion } = this.state;
+    const { questions, currentQuestion, points, isLastQuestion, isAnswerCorrect } = this.state;
     const question = questions[currentQuestion];
 
     const content = (
@@ -55,6 +63,7 @@ class Game extends React.Component {
         isLastQuestion={isLastQuestion}
         totalQuestions={questions.length}
         points={points}
+        setIsAnswerCorrect={this.setIsAnswerCorrect}
       />
     );
 
@@ -67,11 +76,15 @@ class Game extends React.Component {
             subtitle={question.title}
             content={content}
           />
-          <MessageBox
-            isAnswerCorrect={true}
-            correctResultMessage={"correctResultMessage"}
-            solution={"correctAnswer"}
-          />
+          { 
+            isAnswerCorrect !== null &&
+            <MessageBox
+              isAnswerCorrect={isAnswerCorrect}
+              correctResultMessage={question.correctResultMessage}
+              solution={question.correctAnswer}
+            />
+          }
+          
         </div>
         <div id="sidebar">
           <GameStatusSideBar
