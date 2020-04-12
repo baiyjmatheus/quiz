@@ -27,7 +27,7 @@ const LevelSelection = () => {
         />
       </div>
       <div id="sidebar">
-        <img className="squared-img" src="/img/ready.png" alt="Ready?" />
+        <img className="squared-img" src={process.env.PUBLIC_URL + "/img/ready.png"} alt="Ready?" />
       </div>
     </div>
   );

@@ -38,7 +38,7 @@ const FunFact = () => {
         />
       </div>
       <div id="sidebar">
-        <img className="squared-img" src="/img/reading.png" alt="See you in class" />
+        <img className="squared-img" src={process.env.PUBLIC_URL + "/img/reading.png"} alt="See you in class" />
       </div>
     </div>
   );

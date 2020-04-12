@@ -30,7 +30,7 @@ const Welcome = () => {
         />
       </div>
       <div id="sidebar">
-        <img className="squared-img" src="/img/hi.png" alt="Hi" />
+        <img className="squared-img" src={process.env.PUBLIC_URL + "/img/hi.png"} alt="Hi" />
       </div>
     </div>
   );
