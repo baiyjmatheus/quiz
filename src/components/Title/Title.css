@@ -1,0 +1,16 @@
+div#top-title {
+  padding: 16px;
+  border: 2px solid #4885ed;
+  border-radius: 8px;
+  text-align: center;
+}
+
+h2.topbar-title {
+  font-size: 2em;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  div#top-title {
+    display: none;
+  }
+}

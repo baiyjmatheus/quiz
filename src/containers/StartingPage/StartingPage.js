@@ -6,9 +6,11 @@ import './StartingPage.css';
 const StartingPage = () => {
   return (
     <div id='starting-page'>
-      <h1 class='title'>Do you speak Português?</h1>
-      <Link to="/game">
-        <button class='btn btn-primary'>
+      <img className="squared-img" src="/img/see-you-in-class.png" alt="See you in class"/>
+      <h1 className='title'>Do you speak <span className="highlighted">Português</span>?</h1>
+      <h6 className="sub-title">by: Inês Kim</h6>
+      <Link to="/welcome">
+        <button className='btn btn-primary'>
           Começar
         </button>
       </Link>

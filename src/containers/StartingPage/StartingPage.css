@@ -1,12 +1,30 @@
 div#starting-page {
   display: flex;
   flex-direction: column;
+  height: 80%;
   justify-content: center;
-  height: 100%;
   text-align: center;
+  margin: 0 auto;
 }
 
 h1.title {
   font-size: 3em;
-  font-weight: 100;
+}
+
+h6.sub-title {
+  text-align: center;
+}
+
+img.squared-img {
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  img.squared-img {
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+  }
 }

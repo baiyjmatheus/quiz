@@ -1,0 +1,42 @@
+div#content-box {
+  margin: 64px 0 0 0;
+  flex-grow: 1;
+  padding: 16px;
+  border: 2px solid #4885ed;
+  border-radius: 8px;
+  text-align: center;
+  background: rgb(202,229,251);
+  background: linear-gradient(180deg, rgba(202,229,251,1) 17%, rgba(130,176,255,1) 100%);
+}
+
+div#subtitle-container {
+  margin-top: -3em;
+  padding: 8px 32px;
+  z-index: 1;
+  border: 3px solid #ffffff;
+  border-radius: 64px;
+  background: #f79646;
+  color: #ffffff;
+}
+
+div#content {
+  display: flex;
+  height: 100%;
+  font-size: 1.5em;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+span.bold {
+  font-weight: bold;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  div#content-box {
+    margin: 32px 0 0 0;
+  }
+
+  div#subtitle-container {
+    margin-top: -5em;
+  }
+}

@@ -10,6 +10,7 @@ import questions from './questions';
 import StartingPage from './containers/StartingPage/StartingPage';
 import Game from './containers/Game/Game';
 import GameOver from './containers/GameOver/GameOver';
+import Welcome from './containers/Welcome/Welcome';
 
 const App = () => {
   return (
@@ -17,10 +18,9 @@ const App = () => {
       <Switch>
           <Route path="/result" component={GameOver} />
           <Route path="/game">
-            <Game 
-              questions={questions}
-            />
+            <Game questions={questions} />
           </Route>
+          <Route path="/welcome" component={Welcome}/>
           <Route path="/">
             <StartingPage />
           </Route>

@@ -1,5 +1,46 @@
-.fadeOut {
-  padding-right: 100px;
-  opacity: 0;
-  transition: all .75s ease;
+p {
+  margin: 0;
+}
+
+span.highlighted {
+  color: #4885ed;
+}
+
+div#app-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+div#main-content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100vh;
+  padding: 16px;
+}
+
+div#sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  width: 30%;
+}
+
+div.sentence-translated {
+  margin: 32px 0;
+}
+
+.translation {
+  color: #c00000;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  div#app-wrapper {
+    flex-direction: column-reverse;
+    font-size: 0.75em;
+  }
+
+  div#main-content, div#sidebar {
+    width: 100vw;
+  }
 }
