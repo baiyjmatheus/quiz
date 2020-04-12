@@ -7,22 +7,14 @@ const Welcome = () => {
   const content = (
     <div>
       <div className="sentence-translated">
-        <p>The language spoken in Brazil is Portuguese.</p>
-        <p className="translation">O idioma que se fala no Brasil é o <span className="bold">Português</span>.</p>
+        <p>Let's learn how to speak and write in Portuguese correctly!</p>
+        <p className="translation">Vamos aprender a falar e escrever <span className="bold">Português</span>corretamente!</p>
       </div>
       <div className="sentence-translated">
-        <p>Due the portuguese colonization, Brazil has adopted portuguese as their language.</p>
-        <p className="translation">Devido a colonização portuguesa, o Brasil adotou o português como seu idioma.</p>
+        <p>Let's go!</p>
+        <p className="translation">Vamos lá!</p>
       </div>
-      <div className="sentence-translated">
-        <p>However, brazilian Portuguese is slightly different from Portugal's, ok?</p>
-        <p className="translation">Mas o <span className="bold">Português</span> brasileiro é um pouco diferente de Portugal, ok?</p>
-      </div>
-      <div className="sentence-translated">
-        <p>Let's start learning?</p>
-        <p className="translation">Vamos começar a aprender?</p>
-      </div>
-      <Link to="/game">
+      <Link to="/fun-fact">
         <button className="btn btn-lg btn-primary">Next</button>
       </Link>
     </div>
@@ -38,7 +30,7 @@ const Welcome = () => {
         />
       </div>
       <div id="sidebar">
-        <img className="squared-img" src="/img/reading.png" alt="See you in class" />
+        <img className="squared-img" src="/img/hi.png" alt="Hi" />
       </div>
     </div>
   );

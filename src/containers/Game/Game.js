@@ -2,15 +2,18 @@ import React from 'react';
 
 import QuestionContainer from '../QuestionContainer/QuestionContainer';
 import GameStatusSideBar from '../GameStatusSidebar/GameStatusSideBar';
+import questions from './questions';
 
 class Game extends React.Component {
   constructor(props) {
     super(props);
+    const { level } = this.props.match.params;
     this.state = {
       isLastQuestion: false,
       points: 0,
       currentQuestion: 0,
-    }    
+      questions: questions[level],
+    };
   }
 
   toggleIsLastQuestion = () => {
@@ -36,8 +39,8 @@ class Game extends React.Component {
   }
 
   render() {
-    const { currentQuestion, points, isLastQuestion } = this.state;
-    const question = this.props.questions[this.state.currentQuestion];
+    const { questions, currentQuestion, points, isLastQuestion } = this.state;
+    const question = questions[currentQuestion];
     return (
       <div id="game-container">
         <QuestionContainer 
@@ -50,7 +53,7 @@ class Game extends React.Component {
         <GameStatusSideBar
           points={points}
           currentQuestionCounter={currentQuestion + 1}
-          totalQuestionsNumber={this.props.questions.length}
+          totalQuestionsNumber={questions.length}
         />
       </div>
     );
