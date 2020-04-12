@@ -1,8 +1,11 @@
 import React from 'react';
 
-import Question from '../../components/Question/Question';
 import Choices from '../../components/Choices/Choices';
+import MessageBox from '../../components/MessageBox/MessageBox';
+
 import { Link } from 'react-router-dom';
+
+import './QuestionContainer.css';
 
 class QuestionContainer extends React.Component {
   constructor(props) {
@@ -43,36 +46,42 @@ class QuestionContainer extends React.Component {
 
   render() {
     const {
+      questionDescription,
       choices,
       correctResultMessage,
-      wrongAnswerMessage,
+      correctAnswer,
     } = this.props.question;
-    const { isLastQuestion, points } = this.props;
-    const { isAnswerCorrect } = this.state;
+    const { isLastQuestion, points, totalQuestions } = this.props;
+    const { isAnswerCorrect, selectedAnswer, isAnswered } = this.state;
     const proceedBtn = isLastQuestion
       ? <Link to={{
         pathname: "/result",
         aboutProps: {
           points,
+          totalQuestions,
         },
-      }}><button>Finalizar</button></Link>
-      : <button onClick={this.handleNextQuestion}>Proxima pergunta</button>
+      }}><button className="btn btn-lg btn-primary">Finalizar</button></Link>
+      : <button className="btn btn-lg btn-primary" onClick={this.handleNextQuestion}>Proxima pergunta</button>
 
     return(
       <div id="question-container">
+        <p className="question-description">{questionDescription}</p>
+
         <Choices
           choices={choices}
           handleChoiceSelection={this.handleChoiceSelection}
           handleAnswerSubmission={this.handleAnswerSubmission}
-          selectedAnswer={this.state.selectedAnswer}
-          isAnswered={this.state.isAnswered}
+          selectedAnswer={selectedAnswer}
+          isAnswered={isAnswered}
         />
         {
           isAnswerCorrect !== null && 
           <div>
-            <p>
-              { isAnswerCorrect ? correctResultMessage : wrongAnswerMessage }
-            </p>
+            <MessageBox
+              isAnswerCorrect={isAnswerCorrect}
+              correctResultMessage={correctResultMessage}
+              solution={correctAnswer}
+            />
             { proceedBtn }
           </div>
         }

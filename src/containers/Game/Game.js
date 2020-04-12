@@ -2,10 +2,11 @@ import React from 'react';
 
 import Title from '../../components/Title/Title';
 import ContentBox from '../../components/ContentBox/ContentBox';
-import Choices from '../../components/Choices/Choices';
 import QuestionContainer from '../QuestionContainer/QuestionContainer';
 import GameStatusSideBar from '../GameStatusSidebar/GameStatusSideBar';
 import questions from './questions';
+
+import './Game.css';
 
 class Game extends React.Component {
   constructor(props) {
@@ -51,6 +52,7 @@ class Game extends React.Component {
         increasePoint={this.increasePoint}
         goToNextQuestion={this.goToNextQuestion}
         isLastQuestion={isLastQuestion}
+        totalQuestions={questions.length}
         points={points}
       />
     );
@@ -61,7 +63,7 @@ class Game extends React.Component {
         <div id="main-content">
           <Title />
           <ContentBox
-            subtitle={question.questionDescription}
+            subtitle={question.title}
             content={content}
           />
         </div>

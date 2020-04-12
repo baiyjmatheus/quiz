@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Choices.css';
+
 const Choices = ({choices, selectedAnswer, handleChoiceSelection, handleAnswerSubmission, isAnswered}) => {
   const choicesRadio = choices.map(choice => {
     return (
@@ -23,7 +25,11 @@ const Choices = ({choices, selectedAnswer, handleChoiceSelection, handleAnswerSu
     <div id='choices'>
       <form onSubmit={handleAnswerSubmission}>
         { choicesRadio }
-        { !isAnswered && <button type="submit">Enviar resposta</button> }
+        {
+          selectedAnswer !== null &&
+          !isAnswered &&
+          <button className="btn btn-lg btn-primary" type="submit">Enviar resposta</button>
+        }
       </form>
     </div>
   );

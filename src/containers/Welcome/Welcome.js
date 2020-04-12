@@ -8,7 +8,7 @@ const Welcome = () => {
     <div>
       <div className="sentence-translated">
         <p>Let's learn how to speak and write in Portuguese correctly!</p>
-        <p className="translation">Vamos aprender a falar e escrever <span className="bold">Português</span>corretamente!</p>
+        <p className="translation">Vamos aprender a falar e escrever <span className="bold">Português</span> corretamente!</p>
       </div>
       <div className="sentence-translated">
         <p>Let's go!</p>

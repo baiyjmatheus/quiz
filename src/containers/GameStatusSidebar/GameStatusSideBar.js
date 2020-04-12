@@ -1,10 +1,18 @@
 import React from 'react';
 
+import './GameStatusSideBar.css';
+
 const GameStatusSideBar = ({points, currentQuestionCounter, totalQuestionsNumber}) => {
   return (
     <div id="game-status-sidebar">
-      <p>Pergunta: {currentQuestionCounter}/{totalQuestionsNumber}</p>
-      <p>Pontos: {points}</p>
+      <p>
+        Question<br/>
+        {currentQuestionCounter}/{totalQuestionsNumber}
+      </p>
+      <p>
+        Right answers<br/>
+        {points}
+      </p>
     </div>
   );
 }

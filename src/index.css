@@ -11,5 +11,12 @@ html, body {
 
 div#root {
   height: 100%;
-  width: 100%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  div#root {
+    width: 100vw;
+  }
 }

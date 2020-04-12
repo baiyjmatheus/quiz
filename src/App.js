@@ -12,6 +12,7 @@ import GameOver from './containers/GameOver/GameOver';
 import Welcome from './containers/Welcome/Welcome';
 import FunFact from './containers/FunFact/FunFact';
 import LevelSelection from './containers/LevelSelection/LevelSelection';
+import GameStatusSideBar from './containers/GameStatusSidebar/GameStatusSideBar';
 
 const App = () => {
   return (
@@ -22,9 +23,8 @@ const App = () => {
           <Route path="/level-selection" component={LevelSelection} />
           <Route path="/fun-fact" component={FunFact} />
           <Route path="/welcome" component={Welcome}/>
-          <Route path="/quiz">
-            <StartingPage />
-          </Route>
+          <Route path="/quiz" component={StartingPage} />
+          <Route path="/test" component={GameStatusSideBar} />
         </Switch>
     </Router>
   );
