@@ -2,14 +2,14 @@ const questions = {
   level1: [
     {
       title: "You've just arrived at São Paulo's airport!",
-      questionDescription: "Immigration",
+      questionDescription: "Word \"Immigration\" in portuguese is:",
       correctAnswer: "Imigração",
       choices: ["Emigração", "Imigração", "Importação"],
       correctResultMessage: "Well done!",
     },
     {
       title: "At the entrance of the shopping mall you see a door",
-      questionDescription: "Push",
+      questionDescription: "Word \"Push\" in portuguese is:",
       correctAnswer: "Empurre",
       choices: ["Puxe", "Empurre"],
       correctResultMessage: "Well done! That was a tricky one!",

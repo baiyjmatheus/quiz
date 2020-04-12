@@ -24,7 +24,6 @@ const App = () => {
           <Route path="/fun-fact" component={FunFact} />
           <Route path="/welcome" component={Welcome}/>
           <Route path="/quiz" component={StartingPage} />
-          <Route path="/test" component={GameStatusSideBar} />
         </Switch>
     </Router>
   );

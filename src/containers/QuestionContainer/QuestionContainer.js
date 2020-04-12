@@ -60,7 +60,7 @@ class QuestionContainer extends React.Component {
           points,
           totalQuestions,
         },
-      }}><button className="btn btn-lg btn-primary">Finalizar</button></Link>
+      }}><button className="btn btn-lg btn-success">Finalizar</button></Link>
       : <button className="btn btn-lg btn-primary" onClick={this.handleNextQuestion}>Proxima pergunta</button>
 
     return(

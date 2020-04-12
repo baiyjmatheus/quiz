@@ -26,9 +26,8 @@ const Choices = ({choices, selectedAnswer, handleChoiceSelection, handleAnswerSu
       <form onSubmit={handleAnswerSubmission}>
         { choicesRadio }
         {
-          selectedAnswer !== null &&
           !isAnswered &&
-          <button className="btn btn-lg btn-primary" type="submit">Enviar resposta</button>
+          <button className="btn btn-lg btn-success" type="submit" disabled={selectedAnswer === null}>Enviar resposta</button>
         }
       </form>
     </div>

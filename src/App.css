@@ -22,8 +22,10 @@ div#main-content {
 div#sidebar {
   display: flex;
   flex-direction: column;
-  padding: 32px;
+  margin: 16px;
   width: 30%;
+  border: 2px solid #4885ed;
+  border-radius: 8px;
 }
 
 div.sentence-translated {

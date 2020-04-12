@@ -4,15 +4,14 @@ div#game-status-sidebar {
   justify-content: center;
   height: 200px;
   width: 200px;
-  text-align: center;
-  border: 2px solid #4885ed;
-  border-radius: 200px;
+  margin: 16px auto;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 @media (min-width: 320px) and (max-width: 720px) {
   div#game-status-sidebar {
     display: block;
-    border-radius: 8px;
     height: auto;
     width: auto;
   }
