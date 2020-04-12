@@ -30,7 +30,7 @@ span.bold {
   font-weight: bold;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 720px) {
   div#content-box {
     margin: 32px 0 0 0;
   }

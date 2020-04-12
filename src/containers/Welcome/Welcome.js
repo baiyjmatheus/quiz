@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Title from '../../components/Title/Title';
 import ContentBox from '../../components/ContentBox/ContentBox';
 
+import './Welcome.css';
+
 const Welcome = () => {
   const content = (
     <div>

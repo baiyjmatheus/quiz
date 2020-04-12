@@ -15,7 +15,7 @@ div#root {
   margin: 0 auto;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 720px) {
   div#root {
     width: 100vw;
   }

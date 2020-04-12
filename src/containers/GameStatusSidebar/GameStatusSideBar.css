@@ -9,7 +9,7 @@ div#game-status-sidebar {
   border-radius: 200px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 720px) {
   div#game-status-sidebar {
     display: block;
     border-radius: 8px;

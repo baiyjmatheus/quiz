@@ -34,13 +34,17 @@ div.sentence-translated {
   color: #c00000;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 720px) {
   div#app-wrapper {
     flex-direction: column-reverse;
     font-size: 0.75em;
   }
 
-  div#main-content, div#sidebar {
+  div#main-content {
     width: 100vw;
+  }
+
+  div#sidebar {
+    display: none;
   }
 }
