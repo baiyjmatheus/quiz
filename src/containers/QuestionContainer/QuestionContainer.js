@@ -43,7 +43,6 @@ class QuestionContainer extends React.Component {
 
   render() {
     const {
-      questionDescription,
       choices,
       correctResultMessage,
       wrongAnswerMessage,
@@ -61,7 +60,6 @@ class QuestionContainer extends React.Component {
 
     return(
       <div id="question-container">
-        <Question questionDescription={questionDescription} />
         <Choices
           choices={choices}
           handleChoiceSelection={this.handleChoiceSelection}
