@@ -1,0 +1,14 @@
+@media (min-width: 320px) and (max-width: 720px) {
+  div#app-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  div#sidebar {
+    height: 10%;
+  }
+
+  div#main-content {
+    height: 90%;
+  }
+}

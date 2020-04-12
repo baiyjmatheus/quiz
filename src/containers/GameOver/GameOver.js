@@ -9,7 +9,7 @@ const GameOver = (props) => {
   const playerWin = points >= totalQuestions / 2;
 
   const contentMessage = playerWin
-    ? <p>Excellent! You hit { points } questions out of { totalQuestions }! Let's keep learning?</p>
+    ? <p>Excellent!<br/>You hit { points } questions out of { totalQuestions }!<br/>Let's keep learning?</p>
     : <p>What a pity! A little complicated, isn't it ? But, step by step, you will understand the difference and learn the Portuguese. Which is a wonderful language!</p>;
 
   const content = (

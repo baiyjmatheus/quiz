@@ -22,8 +22,8 @@ div#main-content {
 div#sidebar {
   display: flex;
   flex-direction: column;
-  margin: 16px;
   width: 30%;
+  margin: 16px 0;
   border: 2px solid #4885ed;
   border-radius: 8px;
 }
@@ -36,10 +36,15 @@ div.sentence-translated {
   color: #c00000;
 }
 
+img.squared-img {
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+}
+
 @media (min-width: 320px) and (max-width: 720px) {
   div#app-wrapper {
     flex-direction: column-reverse;
-    font-size: 0.75em;
   }
 
   div#main-content {
@@ -47,6 +52,13 @@ div.sentence-translated {
   }
 
   div#sidebar {
-    display: none;
+    width: 100vw;
+    border: none;
+  }
+
+  img.squared-img {
+    margin: 0 auto;
+    height: 120px;
+    width: auto;
   }
 }

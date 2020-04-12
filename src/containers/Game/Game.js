@@ -4,6 +4,7 @@ import Title from '../../components/Title/Title';
 import ContentBox from '../../components/ContentBox/ContentBox';
 import QuestionContainer from '../QuestionContainer/QuestionContainer';
 import GameStatusSideBar from '../GameStatusSidebar/GameStatusSideBar';
+import MessageBox from '../../components/MessageBox/MessageBox';
 import questions from './questions';
 
 import './Game.css';
@@ -65,6 +66,11 @@ class Game extends React.Component {
           <ContentBox
             subtitle={question.title}
             content={content}
+          />
+          <MessageBox
+            isAnswerCorrect={true}
+            correctResultMessage={"correctResultMessage"}
+            solution={"correctAnswer"}
           />
         </div>
         <div id="sidebar">

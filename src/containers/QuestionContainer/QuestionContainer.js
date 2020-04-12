@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Choices from '../../components/Choices/Choices';
-import MessageBox from '../../components/MessageBox/MessageBox';
 
 import { Link } from 'react-router-dom';
 
@@ -48,8 +47,6 @@ class QuestionContainer extends React.Component {
     const {
       questionDescription,
       choices,
-      correctResultMessage,
-      correctAnswer,
     } = this.props.question;
     const { isLastQuestion, points, totalQuestions } = this.props;
     const { isAnswerCorrect, selectedAnswer, isAnswered } = this.state;
@@ -77,11 +74,6 @@ class QuestionContainer extends React.Component {
         {
           isAnswerCorrect !== null && 
           <div>
-            <MessageBox
-              isAnswerCorrect={isAnswerCorrect}
-              correctResultMessage={correctResultMessage}
-              solution={correctAnswer}
-            />
             { proceedBtn }
           </div>
         }

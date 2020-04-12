@@ -5,12 +5,12 @@ import './MessageBox.css';
 const MessageBox = ({isAnswerCorrect, correctResultMessage, solution}) => {  
   const content = (
     isAnswerCorrect
-      ? <div className="alert alert-success"><p>{correctResultMessage}</p></div>
-      : <div className="alert alert-danger"><p>Correct solution: {solution}</p></div>
+      ? <p>{correctResultMessage}</p>
+      : <p>Correct solution: {solution}</p>
   );
 
   return (
-    <div className="message-box">
+    <div className={`message-box ${isAnswerCorrect ? 'alert-success' : 'alert-danger'}`}>
       { content }
     </div>
   );

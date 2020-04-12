@@ -14,14 +14,14 @@ const FunFact = () => {
         <p>Due the portuguese colonization, Brazil has adopted portuguese as their language.</p>
         <p className="translation">Devído a colonização portuguesa, o Brasil adotou o português como seu idioma.</p>
       </div>
-      <div className="sentence-translated">
+      {/* <div className="sentence-translated">
         <p>However, brazilian Portuguese is slightly different from Portugal's, ok?</p>
         <p className="translation">Mas o <span className="bold">Português</span> brasileiro é um pouco diferente do português de Portugal, ok?</p>
       </div>
       <div className="sentence-translated">
         <p>Let's start learning?</p>
         <p className="translation">Vamos começar a aprender?</p>
-      </div>
+      </div> */}
       <Link to="/level-selection">
         <button className="btn btn-lg btn-primary">Next</button>
       </Link>

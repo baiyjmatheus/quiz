@@ -12,7 +12,6 @@ import GameOver from './containers/GameOver/GameOver';
 import Welcome from './containers/Welcome/Welcome';
 import FunFact from './containers/FunFact/FunFact';
 import LevelSelection from './containers/LevelSelection/LevelSelection';
-import GameStatusSideBar from './containers/GameStatusSidebar/GameStatusSideBar';
 
 const App = () => {
   return (
