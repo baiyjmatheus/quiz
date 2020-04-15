@@ -70,6 +70,78 @@ const questions = {
       choices: ["Despedida", "Departamento", "Partida"],
       correctResultMessage: "Well done!",
     },
+  ],
+  level2: [
+    {
+      title: "Level 2",
+      questionDescription: "Where is the Immigration?",
+      correctAnswer: "Onde é a imigração?",
+      choices: ["Onde é a alfândega?", "O que é a imigração?", "Onde é a imigração?"],
+      correctResultMessage: "Well done!",
+    },
+    {
+      title: "Level 2",
+      questionDescription: "What time is your arrival?",
+      correctAnswer: "Que horas é a sua chegada?",
+      choices: ["Que horas é a sua partida?", "Que horas é a sua chegada?", "Onde fica sua chegada?"],
+      correctResultMessage: "Well done!",
+    },
+    {
+      title: "Level 2",
+      questionDescription: "My luggage was lost",
+      correctAnswer: "Minha bagagem foi perdida",
+      choices: ["Meu lugar foi perdido", "A bagagem foi perdida", "Minha bagagem foi perdida"],
+      correctResultMessage: "Well done!",
+    },
+    {
+      title: "Level 2",
+      questionDescription: "Go downstairs for baggage claim",
+      correctAnswer: "Desça as escadas para retirada de bagagem",
+      choices: ["Vire a direita para depósito de bagagem", "Desça as escadas para retirada de bagagem", "Leve a sua bagagem de mão"],
+      correctResultMessage: "Well done!",
+    },
+    {
+      title: "Level 2",
+      questionDescription: "Exit at gate 10",
+      correctAnswer: "Saída no portão 10",
+      choices: ["Saída no portão 10", "Espere no portão 10", "Saída às 10 horas"],
+      correctResultMessage: "Well done!",
+    },
+    {
+      title: "Level 2",
+      questionDescription: "Here is my boarding pass",
+      correctAnswer: "Aqui está meu cartão de embarque",
+      choices: ["Guardei o seu cartão de embarque", "Procure o nosso cartão de embarque", "Aqui está meu cartão de embarque"],
+      correctResultMessage: "Well done!",
+    },
+    {
+      title: "Level 2",
+      questionDescription: "What is your flight number?",
+      correctAnswer: "Qual é o seu número de vôo?",
+      choices: ["Qual o seu número de assento?", "Quando é o seu vôo?", "Qual é o seu número de vôo?"],
+      correctResultMessage: "Well done!",
+    },
+    {
+      title: "Level 2",
+      questionDescription: "Nothing to declare at custom",
+      correctAnswer: "Nada a declarar na alfândega",
+      choices: ["Preciso passar na alfândega", "Nada a declarar na alfândega", "Declaração de consumo"],
+      correctResultMessage: "Well done!",
+    },
+    {
+      title: "Level 2",
+      questionDescription: "Your tourist visa has expired",
+      correctAnswer: "Seu visto de turista expirou",
+      choices: ["Seu visto de turista expirou", "Seu visto de trabalho expirou", "Seu visto de estudante está válido"],
+      correctResultMessage: "Well done!",
+    },
+    {
+      title: "Level 2",
+      questionDescription: "Go to the departure area",
+      correctAnswer: "Vá para a área de partida",
+      choices: ["Vá para o departamento", "Vá para a área de partida", "Vamos para a área de chegada"],
+      correctResultMessage: "Well done!",
+    },
   ]
 }
 
