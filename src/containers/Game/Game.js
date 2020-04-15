@@ -5,7 +5,7 @@ import ContentBox from '../../components/ContentBox/ContentBox';
 import QuestionContainer from '../QuestionContainer/QuestionContainer';
 import GameStatusSideBar from '../GameStatusSidebar/GameStatusSideBar';
 import MessageBox from '../../components/MessageBox/MessageBox';
-import questions from './questions';
+import questions from '../../questions';
 
 import './Game.css';
 
@@ -43,10 +43,10 @@ class Game extends React.Component {
   goToNextQuestion = () => {
     this.setState(prevState => ({
       currentQuestion: prevState.currentQuestion + 1,
+      isAnswerCorrect: null,
     }), () => {
       if (this.state.currentQuestion === this.state.questions.length - 1) {
         this.toggleIsLastQuestion();
-        this.setIsAnswerCorrect(null);
       }
     });
   }

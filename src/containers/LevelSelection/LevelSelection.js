@@ -11,9 +11,6 @@ const LevelSelection = () => {
       <Link to="/game/level1">
         <button className="btn btn-lg btn-success">Level 1</button>
       </Link>
-      <Link to="/game/level2">
-        <button className="btn btn-lg btn-primary">Level 2</button>
-      </Link>
     </div>
   );
 
